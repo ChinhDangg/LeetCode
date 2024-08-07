@@ -1,8 +1,6 @@
 package src;
 
 import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Set;
 
 public class WordPattern290 {
     public static boolean wordPattern(String pattern, String s) {
