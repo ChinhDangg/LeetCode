@@ -29,8 +29,6 @@ public class BinaryTreeTilt563 {
         int left = helper(root.left);
         int right = helper(root.right);
         sum += Math.abs(left - right);
-        System.out.println(sum);
-
         return left + right + root.val;
     }
 
@@ -39,7 +37,7 @@ public class BinaryTreeTilt563 {
         root1.left = new TreeNode(2);
         root1.right = new TreeNode(3);
 
-        //System.out.println(findTilt(root1));
+        System.out.println(findTilt(root1));
 
         TreeNode root = new TreeNode(4);
         root.left = new TreeNode(2);
@@ -48,6 +46,7 @@ public class BinaryTreeTilt563 {
         root.left.right = new TreeNode(5);
         root.right.right = new TreeNode(7);
 
+        sum = 0;
         System.out.println(findTilt(root));
     }
 }
